@@ -10,4 +10,4 @@ ssh-add - <<< "$SSH_PRIVATE_KEY"
 eval "set -- $1"
 git-filter-repo "$@"
 
-git push "git@github.com:$TARGET_ORG/$TARGET_REPO.git" HEAD:"$TARGET_BRANCH"
+git push --force "git@github.com:$TARGET_ORG/$TARGET_REPO.git" HEAD:"$TARGET_BRANCH"
